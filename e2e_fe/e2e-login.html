@@ -1,2 +1,13 @@
 <div>
+    <div style="text-align: center;top: 100px; position: absolute; width: 100%;font-size: 25px;">User Login</div>
+    <div style="position: absolute;width: 369px;text-align: center;top: 150px;margin-left: 37%;height: 400px;">
+        <div>
+            <input type="text" placeholder="Username" ng-model="user.username"/>
+            <input type="password" placeholder="Password" ng-model="user.password"/>
+        </div>
+        <div style="margin-top:10px">
+            <button ng-disabled="!(user.username && user.password)" ng-click="login()">Login</button>
+            <button ng-click="forgotPassword()">Forgot Password</button>
+        </div>
+    </div>
 </div>
