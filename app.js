@@ -1,15 +1,15 @@
 angular.module("e2e", ["ngRoute"]).config(['$routeProvider',
     function($routeProvider) {
-        $routeProvider.when('/login/', {
+        $routeProvider.when('/login', {
             templateUrl: 'e2e_fe/e2e-login.html',
             controller: 'e2eLoginCtrl'
         }).
-        when('/home', {
+        when('/home/:username', {
             templateUrl: 'e2e_fe/e2e-home.html',
             controller: 'e2eHomeCtrl'
         }).
         otherwise({
-            redirectTo:'login/'
+            redirectTo:'login'
         });
     }
 ]);
