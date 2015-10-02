@@ -6,7 +6,7 @@
             <input type="password" placeholder="Password" ng-model="user.password"/>
         </div>
         <div style="margin-top:10px">
-            <button ng-disabled="!(user.username && user.password)" ng-click="login()">Login</button>
+            <button ng-disabled="!(user.username && user.password)" ng-click="login(user)">Login</button>
             <button ng-click="forgotPassword()">Forgot Password</button>
         </div>
     </div>
